@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Center - Contact</title>
+  <link rel="stylesheet" href="Event Center_Contact.css" />
+</head>
+
+<body>
+
+  <!-- === Navigation Bar === -->
+  <nav>
+    <div class="topnav">
+      <a href="Event Center Website_Main.html">Home</a>
+      <a href="Event Center Website_Events.html">Events</a>
+      <a href="Event Center Website_Menu.html">Food Menu</a>
+      <a href="Event Center Website_Location.html">Location</a>
+      <a class="active" href="Event Center Website_Contact Us.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- === Page Heading === -->
+  <h1>Contact Us</h1>
+
+  <!-- === Contact Form Container === -->
+  <div class="container">
+    <form action="#0" method="post">
+      <!-- Name Field -->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+        minlength="2"
+      />
+
+      <!-- Email Field -->
+      <label for="user-email">Email:</label>
+      <input
+        type="email"
+        id="user-email"
+        name="user-email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <!-- Comments Field -->
+      <label for="comments">Comments:</label>
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="50"
+        placeholder="Your comments..."
+        required
+        minlength="10"
+      ></textarea>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+  <!-- === Image Section === -->
+  <div class="image-container">
+    <img
+      src="kc_band.jpeg"
+      alt="Band performing at the Event Center"
+      width="400"
+      height="300"
+    />
+  </div>
+
+  <!-- === Footer === -->
+  <footer>
+    <p>Copyright &copy; Lick The Cadaver Entertainment</p>
+  </footer>
+
+</body>
+</html>

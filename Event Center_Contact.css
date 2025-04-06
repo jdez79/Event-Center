@@ -1,0 +1,116 @@
+body {
+
+    text-align: center;
+
+/* Base styles for body */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+      }
+  
+      /* Form styling */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        margin: 0 auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+  
+      label {
+        font-weight: bold;
+      }
+  
+      input, textarea {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+  
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    
+    text-align: center;
+
+    /* Layout wrapper and content */
+    .wrapper {
+        display: grid;
+      }
+    
+    .content {
+        max-width: 500px;
+        margin: auto;
+      }
+
+      /* Navigation bar styling */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: red;
+        color: white;
+      }
+
+      /* Table styling */
+    th, td {
+        border: 3px solid black;
+      }
+
+      /* Responsive design: Navigation */
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+  }

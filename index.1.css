@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Bar */
+  .topnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+    flex: 1 1 auto;
+  }
+  
+  .topnav a:hover {
+    background-color: #575757;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+  }
+  
+  /* Responsive Images */
+  .venue-images img,
+  .container img,
+  .additional-images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  /* Circle image style */
+  .circle-img {
+    border-radius: 50%;
+  }
+  
+  /* Layout Sections */
+  .venue-images,
+  .container,
+  .additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .container h2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Make tables and maps responsive */
+  table,
+  iframe,
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Extra responsive adjustments */
+  @media (max-width: 600px) {
+    .topnav a {
+      flex: 1 1 100%;
+    }
+  
+    .container h2 {
+      font-size: 1.2em;
+    }
+  }
